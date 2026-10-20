@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- The static Worker requires document navigation. */
 import { PageShell } from "@/app/components/SiteChrome";
 import { StructuredData } from "@/app/components/StructuredData";
 import { createPageMetadata, absoluteUrl } from "@/lib/seo";

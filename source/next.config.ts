@@ -9,6 +9,7 @@ validateFeedbackFormEndpoint(process.env.NEXT_PUBLIC_TWS_FEEDBACK_FORM_ENDPOINT,
 
 const nextConfig: NextConfig = {
   output: "export",
+  experimental: { cpus: 2 },
 };
 
 export default nextConfig;
