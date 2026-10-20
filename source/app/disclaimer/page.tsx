@@ -1,0 +1,10 @@
+import { createPageMetadata } from "@/lib/seo";
+import {PageShell} from "../components/SiteChrome";
+
+export const metadata = createPageMetadata({
+  title: "Independent-Service Disclaimer",
+  description: "Review the independent-service, legal, title, mapping, record, and professional-review limits that apply to Texas Water Sources research guidance.",
+  path: "/disclaimer",
+});
+
+export default function Page(){return <PageShell><section className="prose-page legal-page wrap"><p className="eyebrow">Independent-service disclaimer</p><h1>Independent. Educational. Not a government determination.</h1><p className="lead">Texas Water Sources is privately operated. It is not affiliated with, sponsored by, or endorsed by the Texas Real Estate Commission or any government agency.</p><h2>Not legal or title advice</h2><p>Information and summaries are not a legal opinion, title opinion, survey, engineering analysis, appraisal, or determination of ownership, appurtenance, reservation, conveyance, transferability, permitting, compliance, or disclosure obligations.</p><h2>About TREC Form 61-0</h2><p>The assistant explains research subjects associated with the form. It does not complete the form, recommend or select an answer, decide what a seller knows, or determine what must be disclosed. Obtain the current official form from TREC.</p><a className="official-link inline" href="https://www.trec.texas.gov/forms/water-notice-sellers-disclosure-about-groundwater-and-surface-water-rights" target="_blank" rel="noreferrer">Open the official TREC Form 61-0 page ↗</a><h2>Maps and records are leads</h2><p>Proximity, overlays, logs, boundaries, water-right records, names, and identifiers can support research. None should be treated alone as proof that a right or facility belongs to or transfers with a property.</p><h2>Professional review</h2><p>Consult the official agency or district and the Texas professional appropriate to the issue, which may include an attorney, title company, surveyor, engineer, well professional, broker, or other specialist.</p><p className="updated">Last updated: July 14, 2026</p></section></PageShell>}

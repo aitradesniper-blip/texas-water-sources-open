@@ -1,0 +1,63 @@
+.well-report-lookup{padding:68px 0 76px;background:#eaf2f0;border-bottom:1px solid var(--line)}
+.well-report-lookup-inner{max-width:1080px}
+.well-report-lookup-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:52px;align-items:end;margin-bottom:32px}
+.well-report-lookup-heading h2,.well-lookup-results>header h2{margin:0;font:400 clamp(2.45rem,5vw,4.35rem)/1.02 Georgia,serif;letter-spacing:-.04em}
+.well-report-lookup-heading>p{margin:0;color:#486166;font-size:16px;line-height:1.7}
+.well-lookup-form,.well-lookup-candidates,.well-lookup-unavailable{padding:30px;border:1px solid #bdccca;background:#fff}
+.well-lookup-fields{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(220px,.65fr);gap:18px}
+.well-lookup-fields label>span{display:block;margin-bottom:7px;font-size:14px;font-weight:750}
+.well-lookup-fields input{width:100%;min-height:50px;padding:11px 13px;border:1px solid #83999c;border-radius:3px;color:var(--ink);background:#fff;font-size:16px}
+.well-lookup-fields input:focus,.well-lookup-acknowledgment input:focus-visible,.well-lookup-candidates input:focus-visible+span{outline:3px solid #d49a43;outline-offset:3px}
+.well-lookup-acknowledgment{display:flex;align-items:flex-start;gap:12px;margin:22px 0;color:#405b60;font-size:14px;line-height:1.6}
+.well-lookup-acknowledgment input{flex:0 0 auto;width:20px;height:20px;margin-top:2px}
+.well-lookup-status{min-height:24px;margin:16px 0 0;color:#365a61;font-size:14px;font-weight:700}
+.well-lookup-status.is-error{color:#7b351f}
+.well-lookup-candidates{margin-top:22px}
+.well-lookup-candidates h3{margin:0 0 20px;font:400 29px Georgia,serif}
+.well-lookup-candidates fieldset{display:grid;gap:10px;margin:0 0 22px;padding:0;border:0}
+.well-lookup-candidates legend{margin-bottom:10px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.well-lookup-candidates label{display:flex;align-items:center;gap:13px;padding:15px;border:1px solid #cad5d3;cursor:pointer}
+.well-lookup-candidates label.selected{border-color:var(--water);background:#eef6f4}
+.well-lookup-candidates input{width:19px;height:19px}
+.well-lookup-candidates strong,.well-lookup-candidates small{display:block}
+.well-lookup-candidates small{margin-top:3px;color:var(--muted)}
+.well-lookup-unavailable strong{font:400 24px Georgia,serif}
+.well-lookup-unavailable p{margin:8px 0 0;color:var(--muted)}
+.well-lookup-results>header{display:flex;align-items:end;justify-content:space-between;gap:32px;padding-bottom:30px;border-bottom:2px solid var(--navy)}
+.well-lookup-results>header>div>p:last-child{color:#53686d}
+.well-lookup-results>header h2:focus-visible{outline:3px solid #d49a43;outline-offset:5px}
+.well-lookup-count-boundary{margin:26px 0 0;padding:18px 20px;border-left:4px solid var(--rust);background:#f5ead8;color:#5f584d;line-height:1.65}
+.well-lookup-source{margin-top:58px;padding-top:42px;border-top:1px solid #c8d3d1}
+.well-lookup-source-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:15px}
+.well-lookup-source-heading h3{margin:0;font:400 clamp(2rem,4vw,3rem)/1.1 Georgia,serif}
+.well-lookup-source-heading>p{margin:0;color:#526b70}
+.well-lookup-source-heading>p strong{font:400 31px Georgia,serif}
+.well-lookup-source-summary{max-width:860px;margin:0 0 24px;color:#4c6468;line-height:1.7}
+.well-lookup-record-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.well-lookup-record{min-width:0;padding:25px;border:1px solid #c8d3d1;background:#fff;break-inside:avoid}
+.well-lookup-record-topline{display:flex;justify-content:space-between;gap:15px;color:#2b6570;font-size:10px;font-weight:850;letter-spacing:.055em;text-transform:uppercase}
+.well-lookup-record h4{margin:18px 0;font:400 23px/1.25 Georgia,serif;overflow-wrap:anywhere}
+.well-lookup-record dl{margin:0}
+.well-lookup-record dl>div{display:grid;grid-template-columns:minmax(125px,.8fr) minmax(0,1.2fr);gap:14px;padding:10px 0;border-top:1px solid #e0e7e5}
+.well-lookup-record dt{color:#5c7073;font-size:12px}
+.well-lookup-record dd{margin:0;overflow-wrap:anywhere;font-size:13px;font-weight:700}
+.well-lookup-distance-limit{padding:13px 15px;background:#f5f0e6;color:#655d51;font-size:12px;line-height:1.55}
+.well-lookup-official-link,.well-lookup-source-link{display:inline-flex;min-height:44px;align-items:center;color:var(--blue);font-size:13px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.well-lookup-source-state{padding:24px;border:1px solid #c7d2d0;background:#fff}
+.well-lookup-source-state strong{font:400 20px Georgia,serif}
+.well-lookup-source-state p{margin:7px 0 0;color:var(--muted);line-height:1.65}
+.well-lookup-verification{margin-top:64px;padding:38px;background:var(--navy);color:#fff}
+.well-lookup-verification .eyebrow{color:#a9ccd1}
+.well-lookup-verification>h3{max-width:780px;margin:0 0 28px;font:400 clamp(2rem,4vw,3rem)/1.12 Georgia,serif}
+.well-lookup-verification>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#41636a}
+.well-lookup-verification article{padding:25px;background:#173f49}
+.well-lookup-verification h4{margin:0 0 10px;font:400 20px Georgia,serif}
+.well-lookup-verification article p{margin:0;color:#cadadb;font-size:14px;line-height:1.65}
+.well-lookup-next{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(330px,.95fr);gap:48px;align-items:end;margin-top:58px;padding-top:42px;border-top:1px solid #c8d3d1}
+.well-lookup-next h3{margin:0;font:400 32px/1.15 Georgia,serif}
+.well-lookup-next>div:first-child>p:last-child{color:#53686d;line-height:1.7}
+.well-lookup-next .button-row{align-items:stretch;flex-direction:column}
+.well-lookup-next .button{width:100%;text-align:center}
+@media(max-width:760px){.well-report-lookup-heading,.well-lookup-next{grid-template-columns:1fr;gap:26px}.well-lookup-fields,.well-lookup-record-grid,.well-lookup-verification>div{grid-template-columns:1fr}.well-lookup-results>header,.well-lookup-source-heading{align-items:flex-start;flex-direction:column}.well-lookup-results>header .button{width:100%}.well-lookup-record dl>div{grid-template-columns:1fr;gap:3px}}
+@media(max-width:640px){.well-report-lookup{padding:44px 0 54px}.well-report-lookup-inner{width:min(100% - 30px,1080px)}.well-lookup-form,.well-lookup-candidates,.well-lookup-unavailable{margin-inline:-15px;padding:24px 20px}.well-lookup-form>.button{width:100%}.well-lookup-record{padding:22px 19px}.well-lookup-record-topline{align-items:flex-start;flex-direction:column}.well-lookup-verification{margin-inline:-15px;padding:30px 20px}.well-lookup-next .button-row{width:100%}}
+@media print{.well-lookup-form,.well-lookup-status,.well-lookup-candidates,.well-lookup-results>header .button{display:none!important}.well-report-lookup{padding:0 0 30px;background:#fff}.well-lookup-record-grid,.well-lookup-verification>div{grid-template-columns:repeat(2,minmax(0,1fr))}.well-lookup-record,.well-lookup-verification article{background:#fff;color:#111;border:1px solid #777}.well-lookup-verification{color:#111;background:#fff;border:1px solid #777}.well-lookup-verification article p{color:#111}.well-lookup-next{break-inside:avoid}.well-lookup-next .button-row{display:none}}

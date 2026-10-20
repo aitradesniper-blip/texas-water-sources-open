@@ -1,0 +1,4 @@
+.coverage-selector{display:flex;flex-direction:column;gap:8px;max-width:560px;font-weight:600}
+.coverage-selector select{width:100%;min-width:0;padding:12px;border:1px solid #a9bab7;border-radius:6px;background:#fff;color:#172b35;font:inherit}
+.coverage-selector select:focus-visible{outline:3px solid #287163;outline-offset:3px}
+#district-coverage:target{scroll-margin-top:16px}

@@ -1,0 +1,63 @@
+.desktop-nav{gap:16px;font-size:12px}
+.mobile-report-link{color:var(--blue);font-weight:850}
+.footer-brand small,.footer-bottom{color:#a8bdc0}
+.home-product-hero .hero-copy{align-self:center}
+.home-report-explainer{padding-top:90px}
+.home-report-explainer .platform-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.home-report-explainer .platform-grid article{min-height:250px}
+
+.share-tool-control{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:30px}
+.share-tool-control>span{color:#d2e2e3;font-size:13px}
+
+.contact-page,.feedback-page{max-width:1080px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.contact-card{scroll-margin-top:24px;padding:34px;border-top:4px solid var(--water);background:#fff;box-shadow:0 14px 40px rgba(20,46,53,.07)}
+.contact-card h2{margin-top:5px}
+.contact-card>p:not(.eyebrow){color:#52686c;line-height:1.75}
+.contact-email{display:inline-block;margin:15px 0;color:var(--blue);font:700 20px/1.3 Georgia,serif;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.contact-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-top:20px}
+.copy-email-control{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.copy-email-status{max-width:340px;color:#4a6266;font-size:13px}
+.contact-privacy-note{margin-top:26px;padding:24px 28px;border-left:4px solid var(--rust);background:#f5ead8}
+.contact-privacy-note p{margin:6px 0 0;color:#665d50;line-height:1.65}
+
+.feedback-form{display:grid;gap:28px;padding:38px;border:1px solid var(--line);background:#fff;box-shadow:0 14px 40px rgba(20,46,53,.07)}
+.feedback-form fieldset{margin:0;padding:0;border:0}
+.feedback-form legend,.feedback-field>span{display:block;margin-bottom:10px;color:#365a61;font-size:13px;font-weight:800}
+.feedback-choice-row{display:flex;flex-wrap:wrap;gap:10px}
+.feedback-choice-row label{position:relative;cursor:pointer}
+.feedback-choice-row input{position:absolute;opacity:0}
+.feedback-choice-row span{display:grid;min-width:100px;min-height:48px;place-items:center;padding:0 18px;border:1px solid #9fb0b1;border-radius:3px;background:#fff;font-weight:750}
+.feedback-choice-row input:checked+span{color:#fff;background:var(--navy);border-color:var(--navy)}
+.feedback-choice-row input:focus-visible+span{outline:3px solid rgba(164,79,50,.5);outline-offset:3px}
+.feedback-field input,.feedback-field select,.feedback-field textarea{display:block;width:100%;max-width:100%;padding:12px 14px;border:1px solid #8fa1a3;border-radius:3px;background:#fff;font:inherit}
+.feedback-field input,.feedback-field select{min-height:50px}
+.feedback-field textarea{resize:vertical}
+.feedback-field input:focus,.feedback-field select:focus,.feedback-field textarea:focus,.feedback-privacy-check input:focus-visible{outline:3px solid rgba(164,79,50,.45);outline-offset:3px}
+.feedback-field small{display:block;margin-top:8px;color:#627477;font-size:13px;line-height:1.55}
+.feedback-privacy-check{display:flex;align-items:flex-start;gap:12px;color:#425c61;line-height:1.65}
+.feedback-privacy-check input{flex:0 0 20px;width:20px;height:20px;margin-top:2px;accent-color:var(--blue)}
+.field-error{display:block;margin:8px 0 0;color:#8b321e;font-size:14px;font-weight:750}
+.feedback-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.feedback-submit-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:24px;border-top:1px solid var(--line)}
+.feedback-submit-row p{margin:0;color:#536a6e;font-size:13px}
+.feedback-submit-row a{color:var(--blue);font-weight:750;text-decoration:underline}
+.feedback-failure,.feedback-success{padding:28px;border-left:5px solid var(--rust);background:#f5ead8}
+.feedback-failure p,.feedback-success p{color:#5a5950;line-height:1.65}
+.feedback-failure .copy-email-control{margin-top:12px}
+.feedback-success{border-left-color:var(--water);background:#eaf3f1}
+
+.trec-property-report-callout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:42px;margin-block:62px;padding:38px;border:1px solid #b9d0d1;background:#eef5f3}
+.trec-property-report-callout h2{margin:7px 0 0;font:400 32px/1.18 Georgia,serif}
+.trec-property-report-callout p:not(.eyebrow){margin:0 0 22px;color:#445c60;font-size:16px;line-height:1.7}
+.navigator-feedback{display:flex;align-items:center;justify-content:space-between;gap:36px;margin-top:28px;padding:32px;border:1px solid var(--line);background:#fff}
+.navigator-feedback h3{margin:5px 0 8px;font:400 27px/1.2 Georgia,serif}
+.navigator-feedback p:not(.eyebrow){max-width:620px;margin:0;color:#52686c;line-height:1.65}
+.navigator-feedback-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px;max-width:520px}
+.navigator-feedback-actions .button{min-height:42px;padding-inline:16px}
+
+@media(max-width:1160px){.desktop-nav{gap:10px;font-size:11px}.nav-cta{padding-inline:12px}}
+@media(max-width:960px){.home-report-explainer .platform-grid{grid-template-columns:1fr}.contact-grid,.trec-property-report-callout{grid-template-columns:1fr}.navigator-feedback{align-items:flex-start;flex-direction:column}.navigator-feedback-actions{justify-content:flex-start;max-width:none}}
+@media(max-width:640px){.home-product-hero .homepage-actions{display:grid;grid-template-columns:1fr}.home-product-hero .button{width:100%}.home-report-explainer{padding-top:70px}.home-report-explainer .section-heading .button{width:100%}.contact-grid{margin-inline:-15px}.contact-card{padding:28px 20px}.contact-actions,.copy-email-control{align-items:flex-start;flex-direction:column}.feedback-form{margin-inline:-15px;padding:28px 20px}.feedback-choice-row{display:grid;grid-template-columns:1fr}.feedback-choice-row label,.feedback-choice-row span{width:100%}.feedback-submit-row{align-items:stretch;flex-direction:column}.trec-property-report-callout{margin-inline:0;padding:28px 20px}.navigator-feedback{margin-inline:-15px;padding:28px 20px}.navigator-feedback-actions{align-items:stretch;display:grid;grid-template-columns:1fr;width:100%}.navigator-feedback-actions .button{width:100%}}
+
+@media print{.share-tool-control,.trec-property-report-callout,.navigator-feedback{display:none!important}}

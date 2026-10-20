@@ -1,0 +1,58 @@
+.district-brief .district-brief-width { max-width: 920px; }
+.district-brief .gcd-intelligence-hero { padding-bottom: 44px; }
+.district-brief .gcd-intelligence-hero h1 { font-size: clamp(2.2rem, 4.3vw, 3.8rem); line-height: 1.1; max-width: 20ch; }
+.district-brief-body { padding-top: 32px; padding-bottom: 80px; font-size: 1.08rem; line-height: 1.75; overflow-wrap: anywhere; }
+.district-brief-body h2 { font-family: Georgia, serif; font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.25; margin: 0 0 22px; scroll-margin-top: 100px; }
+.district-brief-body p { margin: 0 0 20px; }
+.district-brief-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.district-brief-body a:focus-visible, .district-brief-print:focus-visible { outline: 3px solid var(--rust); outline-offset: 4px; }
+.district-brief-dates { padding: 22px 26px; background: white; border: 1px solid var(--line); }
+.district-brief-dates dl { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; margin: 0; }
+.district-brief-dates dt { font-weight: 700; font-size: .85rem; }
+.district-brief-dates dd { margin: 4px 0 0; font-size: .98rem; }
+.district-brief-dates p { font-size: .92rem; margin: 20px 0 0; }
+.district-brief-tools { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 22px 0 30px; font-size: .95rem; }
+.district-brief-print { cursor: pointer; border: 1px solid var(--line); background: white; color: var(--blue); }
+.district-brief-opening { font-size: 1.16rem; }
+.district-brief-contents { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 0; margin: 30px 0 48px; }
+.district-brief-contents h2 { font: 700 1rem Arial, sans-serif; margin-bottom: 14px; }
+.district-brief-contents ol { padding-left: 24px; margin: 0; }
+.district-brief-contents li { padding: 5px 0; }
+.district-brief-finding { margin: 0 0 48px; }
+.district-brief-citations { font-size: .9em; }
+.district-brief-citations a { white-space: normal; }
+.district-brief-interpretation { border-left: 3px solid var(--water); padding: 14px 20px; background: #fff; }
+.district-brief-interpretation p { margin: 0; }
+.district-brief-questions, .district-brief-method, .district-brief-sources { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--line); }
+.district-brief-questions > div { margin-bottom: 28px; }
+.district-brief-questions > div p { margin-bottom: 8px; }
+.district-brief-method, .district-brief-sources { font-size: .98rem; }
+.district-brief-sources ul { padding-left: 22px; }
+.district-brief-sources li { padding-bottom: 12px; }
+@media (max-width: 600px) {
+  .district-brief-dates { padding: 18px; }
+  .district-brief-dates dl { grid-template-columns: 1fr; gap: 14px; }
+  .district-brief-body { font-size: 1rem; }
+  .district-brief-tools { flex-wrap: wrap; }
+}
+@media print {
+  @page { margin: 16mm; }
+  body:has(.district-brief) { background: white; }
+  body:has(.district-brief) .site-header, body:has(.district-brief) .site-footer,
+  .district-brief .breadcrumb, .district-brief-tools, .district-brief-contents { display: none !important; }
+  .district-brief, .district-brief .gcd-intelligence-hero, .district-brief-interpretation { background: white !important; color: black !important; }
+  .district-brief .wrap { width: 100%; max-width: none; padding-left: 0; padding-right: 0; }
+  .district-brief .gcd-intelligence-hero { padding: 0 0 16px; }
+  .district-brief .gcd-intelligence-hero h1 { font-size: 25pt; max-width: none; color: black; }
+  .district-brief .gcd-intelligence-hero p { color: black; }
+  .district-brief-body { padding: 0; font-size: 10.5pt; line-height: 1.5; }
+  .district-brief-opening { font-size: 11pt; }
+  .district-brief-body h2 { font-size: 17pt; break-after: avoid; }
+  .district-brief-body p { orphans: 3; widows: 3; break-inside: avoid; }
+  .district-brief-finding-start, .district-brief-interpretation, .district-brief-questions > div, .district-brief-sources { break-inside: avoid; }
+  .district-brief-dates { padding: 12px; margin-bottom: 20px; break-inside: avoid; }
+  .district-brief-dates dl { grid-template-columns: 1fr 1fr; }
+  .district-brief-finding { margin-bottom: 24px; }
+  .district-brief-method, .district-brief-sources { font-size: 10pt; }
+  .district-brief-body a { color: black; text-decoration: underline; }
+}

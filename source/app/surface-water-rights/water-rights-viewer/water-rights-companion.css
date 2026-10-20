@@ -1,0 +1,76 @@
+.water-rights-companion{padding:68px 0 82px;background:#eaf2f0;border-bottom:1px solid var(--line)}
+.water-rights-companion-inner{max-width:1080px}
+.water-rights-companion-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:52px;align-items:end;margin-bottom:32px}
+.water-rights-companion-heading h2,.water-rights-results>header h2{margin:0;font:400 clamp(2.45rem,5vw,4.35rem)/1.02 Georgia,serif;letter-spacing:-.04em}
+.water-rights-companion-heading>p{margin:0;color:#486166;font-size:16px;line-height:1.7}
+.water-rights-address-form,.water-rights-candidates,.water-rights-unavailable{padding:30px;border:1px solid #bdccca;background:#fff}
+.water-rights-address-fields{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(220px,.65fr);gap:18px}
+.water-rights-address-fields label>span{display:block;margin-bottom:7px;font-size:14px;font-weight:750}
+.water-rights-address-fields input,.water-rights-manual input{width:100%;min-height:50px;padding:11px 13px;border:1px solid #83999c;border-radius:3px;color:var(--ink);background:#fff;font-size:16px}
+.water-rights-address-fields input:focus,.water-rights-manual input:focus,.water-rights-acknowledgment input:focus-visible,.water-rights-candidates input:focus-visible+span{outline:3px solid #d49a43;outline-offset:3px}
+.water-rights-acknowledgment{display:flex;align-items:flex-start;gap:12px;margin:22px 0;color:#405b60;font-size:14px;line-height:1.6}
+.water-rights-acknowledgment input{flex:0 0 auto;width:20px;height:20px;margin-top:2px}
+.water-rights-status{min-height:24px;margin:16px 0 0;color:#365a61;font-size:14px;font-weight:700}
+.water-rights-status.is-error{color:#7b351f}
+.water-rights-candidates{margin-top:22px}
+.water-rights-candidates h3{margin:0 0 20px;font:400 29px Georgia,serif}
+.water-rights-candidates fieldset{display:grid;gap:10px;margin:0 0 22px;padding:0;border:0}
+.water-rights-candidates legend{margin-bottom:10px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.water-rights-candidates label{display:flex;align-items:center;gap:13px;padding:15px;border:1px solid #cad5d3;cursor:pointer}
+.water-rights-candidates label.selected{border-color:var(--water);background:#eef6f4}
+.water-rights-candidates input{width:19px;height:19px}
+.water-rights-candidates strong,.water-rights-candidates small{display:block}
+.water-rights-candidates small{margin-top:3px;color:#53686d}
+.water-rights-unavailable strong{font:400 24px Georgia,serif}
+.water-rights-unavailable p{margin:8px 0 0;color:#53686d}
+.water-rights-results>header{display:flex;align-items:end;justify-content:space-between;gap:32px;padding-bottom:30px;border-bottom:2px solid var(--navy)}
+.water-rights-results>header>div>p:last-child{color:#53686d}
+.water-rights-results>header h2:focus-visible{outline:3px solid #d49a43;outline-offset:5px}
+.water-rights-boundary{margin:26px 0 0;padding:20px;border-left:4px solid var(--rust);background:#f5ead8}
+.water-rights-boundary strong{font:400 21px Georgia,serif}
+.water-rights-boundary p{margin:6px 0 0;color:#5f584d;line-height:1.65}
+.water-rights-source{margin-top:58px;padding-top:42px;border-top:1px solid #c8d3d1}
+.water-rights-source-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:15px}
+.water-rights-source-heading h3{margin:0;font:400 clamp(2rem,4vw,3rem)/1.1 Georgia,serif}
+.water-rights-source-heading>p{max-width:310px;margin:0;color:#526b70;text-align:right}
+.water-rights-source-heading>p strong{font:400 28px Georgia,serif}
+.water-rights-source-summary{max-width:850px;margin:0 0 24px;color:#4c6468;line-height:1.7}
+.water-rights-lead-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.water-rights-lead{min-width:0;padding:25px;border:1px solid #c8d3d1;background:#fff;break-inside:avoid}
+.water-rights-lead-topline{display:flex;justify-content:space-between;gap:15px;color:#2b6570;font-size:10px;font-weight:850;letter-spacing:.055em;text-transform:uppercase}
+.water-rights-lead h4{display:flex;align-items:baseline;gap:12px;margin:18px 0;font:400 29px/1.2 Georgia,serif;overflow-wrap:anywhere}
+.water-rights-lead h4 span{color:#526b70;font:800 10px "Segoe UI",sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.water-rights-lead dl{margin:0}
+.water-rights-lead dl>div{display:grid;grid-template-columns:minmax(135px,.85fr) minmax(0,1.15fr);gap:14px;padding:10px 0;border-top:1px solid #e0e7e5}
+.water-rights-lead dt{color:#566c70;font-size:12px}
+.water-rights-lead dd{margin:0;overflow-wrap:anywhere;font-size:13px;font-weight:700}
+.water-rights-lead-limit{padding:13px 15px;background:#f5f0e6;color:#655d51;font-size:12px;line-height:1.55}
+.water-rights-lead-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.water-rights-lead-actions a,.water-rights-lead-actions button{min-height:44px;display:inline-flex;align-items:center;color:var(--blue);background:transparent;border:0;font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.water-rights-source-state{padding:24px;border:1px solid #c7d2d0;background:#fff}
+.water-rights-source-state strong{font:400 20px Georgia,serif}
+.water-rights-source-state p{margin:7px 0 0;color:#53686d;line-height:1.65}
+.water-rights-manual{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.8fr);gap:48px;margin-top:64px;padding:34px;background:#173f49;color:#fff}
+.water-rights-manual h3{margin:0;font:400 32px/1.15 Georgia,serif}
+.water-rights-manual>div>p:last-child{color:#cadadb;line-height:1.65}
+.water-rights-manual .eyebrow{color:#a9ccd1}
+.water-rights-manual form{align-self:center}
+.water-rights-manual label{display:block;margin-bottom:7px;font-size:14px;font-weight:800}
+.water-rights-manual form p{margin:7px 0 14px;color:#cadadb;font-size:12px;line-height:1.55}
+.water-rights-manual .button.quiet{color:#fff;border-color:#78959a}
+.water-rights-worksheet-status{min-height:28px;display:flex;flex-wrap:wrap;gap:14px;margin:16px 0 0;color:#365a61;font-size:13px}
+.water-rights-worksheet-status a{color:var(--blue);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.water-rights-next{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:48px;align-items:end;margin-top:58px;padding-top:42px;border-top:1px solid #c8d3d1}
+.water-rights-next h3{margin:0;font:400 32px/1.15 Georgia,serif}
+.water-rights-next>div:first-child>p:last-child{color:#53686d;line-height:1.7}
+.water-rights-next .button-row{align-items:stretch;flex-direction:column}
+.water-rights-next .button{width:100%;height:auto;min-height:50px;padding-block:10px;text-align:center}
+.water-rights-worksheet-shell{margin-top:70px;padding-top:52px;border-top:2px solid var(--navy)}
+.water-rights-worksheet-shell>header{max-width:850px;margin-bottom:28px}
+.water-rights-worksheet-shell>header h2{margin:0;font:400 clamp(2.2rem,4.5vw,3.7rem)/1.05 Georgia,serif;letter-spacing:-.035em}
+.water-rights-worksheet-shell>header>p:last-child{color:#4c6468;font-size:16px;line-height:1.7}
+.water-rights-worksheet-shell .worksheet-official-notice{color:#5f584d!important}
+@media(max-width:760px){.water-rights-companion-heading,.water-rights-manual,.water-rights-next{grid-template-columns:1fr;gap:26px}.water-rights-address-fields,.water-rights-lead-grid{grid-template-columns:1fr}.water-rights-results>header,.water-rights-source-heading{align-items:flex-start;flex-direction:column}.water-rights-source-heading>p{text-align:left}.water-rights-results>header .button{width:100%}.water-rights-lead dl>div{grid-template-columns:1fr;gap:3px}}
+@media(max-width:640px){.water-rights-companion{padding:44px 0 54px}.water-rights-companion-inner{width:min(100% - 30px,1080px)}.water-rights-address-form,.water-rights-candidates,.water-rights-unavailable{margin-inline:-15px;padding:24px 20px}.water-rights-address-form>.button{width:100%}.water-rights-lead{padding:22px 19px}.water-rights-lead-topline{align-items:flex-start;flex-direction:column}.water-rights-manual{margin-inline:-15px;padding:30px 20px}.water-rights-manual .button{width:100%}.water-rights-next .button-row{width:100%}.water-rights-worksheet-shell{margin-inline:-15px}.water-rights-worksheet-shell>header{padding-inline:15px}}
+@media print{.water-rights-address-form,.water-rights-status,.water-rights-candidates,.water-rights-results>header .button,.water-rights-manual form,.water-rights-next .button-row{display:none!important}.water-rights-companion{padding:0 0 30px;background:#fff}.water-rights-lead-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.water-rights-lead{border-color:#777}.water-rights-manual{color:#111;background:#fff;border:1px solid #777}.water-rights-manual .eyebrow,.water-rights-manual>div>p:last-child{color:#111}}
+@media print{body[data-print-view="surface-water-candidate"] .supporting-guide-page>*,body[data-print-view="surface-water-candidate-blank"] .supporting-guide-page>*{display:none!important}body[data-print-view="surface-water-candidate"] .supporting-guide-page>.water-rights-companion,body[data-print-view="surface-water-candidate-blank"] .supporting-guide-page>.water-rights-companion{display:block!important}body[data-print-view="surface-water-candidate"] .water-rights-companion-inner>*,body[data-print-view="surface-water-candidate-blank"] .water-rights-companion-inner>*{display:none!important}body[data-print-view="surface-water-candidate"] .water-rights-companion-inner>.water-rights-worksheet-shell,body[data-print-view="surface-water-candidate-blank"] .water-rights-companion-inner>.water-rights-worksheet-shell{display:block!important;margin:0;padding:0;border:0}body[data-print-view="surface-water-candidate"] .water-rights-worksheet-shell>header,body[data-print-view="surface-water-candidate-blank"] .water-rights-worksheet-shell>header{display:none!important}}

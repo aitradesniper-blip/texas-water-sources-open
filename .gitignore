@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+source/public/data/
+source/data/
+source/contracts/
+source/public/*.png
+source/public/*.jpg

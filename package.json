@@ -1,0 +1,44 @@
+{
+  "name": "texas-water-sources-open",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source Texas well-record research interface and frontend reference source.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev demo",
+    "build": "next build demo",
+    "test": "node --experimental-strip-types --test demo/tests/config.test.mjs",
+    "check:diff": "git diff --check"
+  },
+  "dependencies": {
+    "@next/third-parties": "16.2.6",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "ajv": "^8.17.1",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
+  },
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aitradesniper-blip/texas-water-sources-open.git"
+  },
+  "homepage": "https://texaswatersources.com"
+}
