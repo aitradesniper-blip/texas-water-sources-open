@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { briefings } from "@/lib/updates-content";
+import { briefingPath } from "@/lib/updates";
 import { publicSources } from "@/lib/source-catalog";
 import { absoluteUrl } from "@/lib/seo";
 import { publishedSourceCategories } from "@/lib/source-editorial";
@@ -14,8 +16,9 @@ import matters from "@/public/data/water-watch/v1/matters/index.json";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["/well-records/repair-assistance-before-work","/groundwater-districts/intelligence/entities", "/groundwater-districts/intelligence/coverage", "/groundwater-districts/data", ...loadMeetingIndex().map(m => meetingPath(m.key)), "", "/about", "/about/authors/texas-water-sources", "/about/corrections", "/about/editorial-standards", "/contact", "/disclaimer", "/feedback", "/groundwater-districts", "/groundwater-districts/intelligence", "/methodology", "/privacy", "/property-water-report", "/sources", "/surface-water-rights", "/terms", "/trec-61-guide", trecApplicabilityPath, "/well-records", ...supportingGuidePaths, ...legacyGroundwaterDistrictPages.map((district) => `/groundwater-districts/${district.slug}`)];
+  const routes = ["/updates","/well-records/repair-assistance-before-work","/groundwater-districts/intelligence/entities", "/groundwater-districts/intelligence/coverage", "/groundwater-districts/data", ...loadMeetingIndex().map(m => meetingPath(m.key)), "", "/about", "/about/authors/texas-water-sources", "/about/corrections", "/about/editorial-standards", "/contact", "/disclaimer", "/feedback", "/groundwater-districts", "/groundwater-districts/intelligence", "/methodology", "/privacy", "/property-water-report", "/sources", "/surface-water-rights", "/terms", "/trec-61-guide", trecApplicabilityPath, "/well-records", ...supportingGuidePaths, ...legacyGroundwaterDistrictPages.map((district) => `/groundwater-districts/${district.slug}`)];
   return [
+    ...briefings.map(briefing => ({ url: absoluteUrl(briefingPath(briefing.slug)), lastModified: briefing.publishedAt })),
     ...districtBriefSlugs.map((slug) => ({ url: absoluteUrl(districtBriefPath(slug)) })),
     ...matters.matters.map(m=>({url:m.canonical_url})),
     ...routes.map((route) => ({ url: absoluteUrl(route || "/"), changeFrequency: route === "/sources" ? "monthly" as const : "yearly" as const })),

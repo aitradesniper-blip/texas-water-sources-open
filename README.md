@@ -33,6 +33,15 @@ Output is in `demo/out`. No API key, account, database, paid service or environm
 
 This is a clean code snapshot. `source/` is a reference checkout, not a turnkey mirror of the production data service. The full production build requires separately governed data packages, contract fixtures, brand assets and reviewed runtime integrations; those are deliberately absent. The default commands run the self-contained starter instead. No complete statewide live feed is provided. No private repository history or operational account configuration is published.
 
+## District briefings and RSS
+
+The source now includes a small updates section, a verified four-story October 20 briefing, a place filter, canonical sharing links and a static RSS generator. See [UPDATES.md](UPDATES.md) for its data contract and publication checks. Complete source PDFs/video remain on official sites; they are linked, not copied.
+
+- [Read selected district updates](https://texaswatersources.com/updates)
+- [Follow via RSS](https://texaswatersources.com/updates/feed.xml)
+
+No fixed publication schedule is promised. Status and deadlines are date-bounded; proposals, decisions and pumping remain separate. The default local starter is still the independent well-record example; the updates implementation is in `source/app/updates` and `source/lib/updates*`.
+
 ## Useful entry points
 
 - [Find and compare well records](https://texaswatersources.com/well-records)

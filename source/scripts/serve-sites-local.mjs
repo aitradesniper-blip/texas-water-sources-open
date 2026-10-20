@@ -6,7 +6,7 @@ import {resolve,sep,extname} from 'node:path';
 import {Readable} from 'node:stream';
 import worker from '../dist/server/index.js';
 const root=resolve('dist/client'),port=Number(process.env.PORT||3012);
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jsonl':'application/x-ndjson; charset=utf-8','.svg':'image/svg+xml'};
+const types={'.xml':'application/rss+xml; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jsonl':'application/x-ndjson; charset=utf-8','.svg':'image/svg+xml'};
 const env={ASSETS:{async fetch(request){
  const path=resolve(root,'.'+decodeURIComponent(new URL(request.url).pathname));
  if(!path.startsWith(root+sep))return new Response('Not found',{status:404});

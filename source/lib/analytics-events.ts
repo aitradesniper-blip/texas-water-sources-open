@@ -72,7 +72,11 @@ export const gcdDirectoryAnalyticsEvents = [
 
 export type GcdDirectoryAnalyticsEvent = (typeof gcdDirectoryAnalyticsEvents)[number];
 
+export const updatesAnalyticsEvents = ["updates_briefing_opened", "updates_source_opened", "updates_feed_opened"] as const;
+export type UpdatesAnalyticsEvent = (typeof updatesAnalyticsEvents)[number];
+
 export const noDataAnalyticsEvents = [
+  ...updatesAnalyticsEvents,
   ...wellLookupAnalyticsEvents,
   ...waterRightsCompanionAnalyticsEvents,
   ...researchToolDiscoveryAnalyticsEvents,
@@ -88,6 +92,7 @@ type AnalyticsWindow = Window & {
 };
 
 type NoDataAnalyticsEvent =
+  | UpdatesAnalyticsEvent
   | WellLookupAnalyticsEvent
   | WaterRightsCompanionAnalyticsEvent
   | ResearchToolDiscoveryAnalyticsEvent
@@ -167,4 +172,8 @@ export function trackGcdDirectoryEngagement(): void {
   if (gcdDirectoryEngagementRecorded) return;
   gcdDirectoryEngagementRecorded = true;
   trackGcdDirectoryEvent("gcd_directory_engaged");
+}
+
+export function trackUpdatesEvent(eventName: UpdatesAnalyticsEvent): void {
+  trackNoDataEvent(eventName);
 }

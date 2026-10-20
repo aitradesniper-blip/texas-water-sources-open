@@ -206,3 +206,6 @@
 
 #statewide-directory-heading{scroll-margin-top:24px}
 .gcd-directory-caveat{margin:14px 0 0;padding:12px 14px;border-left:3px solid var(--rust);background:#fff8eb;color:#665d50;font-size:12px;line-height:1.6}.gcd-directory-caveat strong{color:var(--ink)}
+
+/* Preserve all header links when the Updates entry needs a wider menu breakpoint. */
+@media(min-width:961px) and (max-width:1180px){.desktop-nav{display:none}.mobile-nav{display:block}}

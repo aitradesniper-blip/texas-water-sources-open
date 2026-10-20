@@ -27,7 +27,7 @@ export function createPageMetadata({
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: url },
+    alternates: { canonical: url, types: { "application/rss+xml": `${SITE_ORIGIN}/updates/feed.xml` } },
     openGraph: {
       title,
       description,

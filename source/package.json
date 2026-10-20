@@ -2,6 +2,7 @@
   "name": "texas-water-sources",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "description": "Portable source project for the Texas Water Sources website.",
   "engines": {
     "node": ">=22.13.0"
@@ -17,13 +18,14 @@
     "check:property-report-production": "node scripts/check-property-report-production-connection.mjs",
     "start": "node scripts/serve-static.mjs",
     "preview": "node scripts/serve-static.mjs",
-    "test": "npm run build:sites && node --test tests/static-export.test.mjs tests/google-analytics.test.mjs tests/free-property-water-lookup.test.mjs tests/property-report-production-connection.test.mjs tests/feedback-production-connection.test.mjs tests/property-water-research-navigator-v2.test.mjs tests/launch-visibility-feedback.test.mjs tests/gcd-intelligence.test.mjs tests/gcd-public-events.test.mjs tests/gcd-statewide-directory.test.mjs tests/data-currentness.test.mjs && npm run test:meetings && node --test tests/meeting-preview-isolation.test.mjs",
+    "test": "npm run build:sites && node --test tests/static-export.test.mjs tests/google-analytics.test.mjs tests/free-property-water-lookup.test.mjs tests/property-report-production-connection.test.mjs tests/feedback-production-connection.test.mjs tests/property-water-research-navigator-v2.test.mjs tests/launch-visibility-feedback.test.mjs tests/gcd-intelligence.test.mjs tests/gcd-public-events.test.mjs tests/gcd-statewide-directory.test.mjs tests/data-currentness.test.mjs && npm run test:meetings && node --test tests/meeting-preview-isolation.test.mjs && npm run test:updates",
     "test:analytics": "node --test tests/google-analytics.test.mjs",
     "test:browser": "playwright test tests/property-water-research-navigator-v2.browser.spec.ts tests/launch-visibility-feedback.browser.spec.ts tests/well-report-lookup.browser.spec.ts tests/water-rights-companion.browser.spec.ts tests/gcd-intelligence.browser.spec.ts tests/gcd-statewide-directory.browser.spec.ts --grep-invert @print",
     "test:print": "playwright test tests/property-water-research-navigator-v2.browser.spec.ts --grep @print",
     "check:diff": "git diff --check",
     "lint": "eslint . --ignore-pattern .next --ignore-pattern out --ignore-pattern dist",
-    "export:meetings": "node scripts/export-meeting-intelligence.mjs"
+    "export:meetings": "node scripts/export-meeting-intelligence.mjs",
+    "test:updates": "node --experimental-strip-types --test tests/updates.test.mjs"
   },
   "dependencies": {
     "@next/third-parties": "16.2.6",
