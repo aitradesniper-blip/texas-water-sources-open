@@ -13,3 +13,5 @@ Before publishing an edition, review all facts/dates against primary evidence, r
 The place filter remains disabled until its client event handler is ready. With JavaScript disabled, all items remain available for reading and native-link navigation. Hosted acceptance verifies the filtered result after hydration.
 
 The October 20 follow-up publishes separate Blanco fee/waiver and Northern Trinity proposed-rule stories. Optional headed detail paragraphs are rendered on the permanent page and included in RSS, with nonempty structural validation. The original first briefing remains preserved. Audit and driller references were checked against the redline: Rule 5.3(a)(14) for the utility audit, Rules 3.12 and 5.3(a)(11) for driller information. Raw PDFs and private source-check notes remain outside this repository.
+
+Hosted acceptance also keeps the copy-link button disabled until its clipboard handler is ready, preventing an early click from being silently lost.

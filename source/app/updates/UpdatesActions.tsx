@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { trackUpdatesEvent } from "@/lib/analytics-events";
 
 export function UpdatesLink({ href, kind, children, className }: { href: string; kind: "briefing" | "source" | "feed"; children: React.ReactNode; className?: string }) {
@@ -8,9 +8,12 @@ export function UpdatesLink({ href, kind, children, className }: { href: string;
 
 export function CopyBriefingLink({ url }: { url: string }) {
   const [message, setMessage] = useState("");
+  const ready = useSyncExternalStore(subscribe, () => true, () => false);
   async function copy() {
     try { await navigator.clipboard.writeText(url); setMessage("Briefing link copied."); }
     catch { setMessage(`Copy this link: ${url}`); }
   }
-  return <div className="updates-copy"><button type="button" className="button quiet" onClick={copy}>Copy briefing link</button><span role="status">{message}</span></div>;
+  return <div className="updates-copy"><button type="button" className="button quiet" disabled={!ready} onClick={copy}>Copy briefing link</button><span role="status">{message}</span></div>;
 }
+
+const subscribe = () => () => {};
