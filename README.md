@@ -9,6 +9,8 @@ Reusable original frontend code from [TexasWaterSources.com](https://texaswaters
 Requirements: Node.js 22.13+ and npm 10+.
 
 ```sh
+git clone https://github.com/aitradesniper-blip/texas-water-sources-open.git
+cd texas-water-sources-open
 npm ci
 npm test
 npm run dev
