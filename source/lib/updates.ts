@@ -8,6 +8,7 @@ export type BriefingItem = {
   status: string;
   nextAction: string;
   sourceDate?: string;
+  details?: { heading: string; paragraphs: string[] }[];
   sources: BriefingSource[];
   unknowns: string[];
 };
@@ -41,6 +42,7 @@ export function validateBriefings(briefings: Briefing[]): Briefing[] {
     for (const item of briefing.items) {
       if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) || ids.has(item.id)) throw new Error("Invalid or duplicate briefing item ID.");
       ids.add(item.id);
+      if (item.details?.some(detail => !detail.heading.trim() || !detail.paragraphs.length || detail.paragraphs.some(text => !text.trim()))) throw new Error("Briefing details require a heading and substantive paragraphs.");
       if ([item.place, item.title, item.mattersTo, item.changed, item.status, item.nextAction].some(value => !value.trim()) || !item.sources.length || !item.unknowns.length) throw new Error("Every update requires reader scope, status, next action, primary evidence and unknowns.");
       for (const source of item.sources) {
         const url = new URL(source.url);
@@ -69,6 +71,7 @@ export function buildUpdatesFeed(input: Briefing[]) {
     const description = [briefing.summary, `Sources checked ${briefingDate(briefing.checkedOn)} (Central time). ${briefing.checkNote || ""}`, ...briefing.items.map(item => [
       `${item.place}: ${item.title}`, `Who it matters to: ${item.mattersTo}`, `What changed: ${item.changed}`,
       `Status at source check: ${item.status}`, `Next date or action to check: ${item.nextAction}`,
+      ...(item.details || []).map(detail => `${detail.heading}: ${detail.paragraphs.join("\n")}`),
       `Unknowns: ${item.unknowns.join(" ")}`, ...item.sources.map(source => `Primary evidence: ${source.title}${source.locator ? ` (${source.locator})` : ""} — ${source.url}`),
     ].join("\n"))].join("\n\n");
     return `<item><title>${escapeXml(briefing.title)}</title><link>${escapeXml(url)}</link><guid isPermaLink="true">${escapeXml(url)}</guid><pubDate>${new Date(briefing.publishedAt).toUTCString()}</pubDate><description>${escapeXml(description)}</description>${[...new Set(briefing.items.map(item => item.place))].map(place => `<category>${escapeXml(place)}</category>`).join("")}</item>`;

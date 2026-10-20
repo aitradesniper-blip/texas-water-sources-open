@@ -35,3 +35,12 @@ test("feed ordering and build date are deterministic, with unique permanent URLs
   assert.throws(() => validateBriefings([first, first]));
   assert.equal(xml, buildUpdatesFeed([second, first]));
 });
+
+test("expanded briefing details remain readable in RSS and reject empty sections", () => {
+  const value = sample();
+  value.items[0].details = [{ heading: "Selected proposal", paragraphs: ["Conditional requirement, not an adopted rule.", "Read the primary source."] }];
+  const xml = buildUpdatesFeed([value]);
+  assert.match(xml, /Selected proposal: Conditional requirement, not an adopted rule\.\nRead the primary source\./);
+  value.items[0].details[0].paragraphs = [];
+  assert.throws(() => validateBriefings([value]));
+});

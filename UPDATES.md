@@ -11,3 +11,5 @@ The static Next.js RSS route is `/updates/feed.xml`. RSS contains the same scope
 Before publishing an edition, review all facts/dates against primary evidence, run the helper tests and production build, parse the emitted XML, verify canonical/sitemap/feed links, and check mobile/keyboard/no-JavaScript reading. Confirm real public output after deployment. This release adds no automatic source refresh or publishing cadence.
 
 The place filter remains disabled until its client event handler is ready. With JavaScript disabled, all items remain available for reading and native-link navigation. Hosted acceptance verifies the filtered result after hydration.
+
+The October 20 follow-up publishes separate Blanco fee/waiver and Northern Trinity proposed-rule stories. Optional headed detail paragraphs are rendered on the permanent page and included in RSS, with nonempty structural validation. The original first briefing remains preserved. Audit and driller references were checked against the redline: Rule 5.3(a)(14) for the utility audit, Rules 3.12 and 5.3(a)(11) for driller information. Raw PDFs and private source-check notes remain outside this repository.
